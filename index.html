@@ -3,15 +3,20 @@
 
 <head>
     <style>
-            .carousel-control.left,
+        .carousel-control.left,
         .carousel-control.right {
             background: none !important;
             filter: progid: none !important;
         }
         
         body {
-            /*overflow: hidden !important;
-         }
+            /*overflow: hidden !important; */
+        }
+        
+        .card-img-top {
+            width: 100%;
+            height: auto;
+        }
     </style>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
@@ -23,25 +28,25 @@
 </head>
 
 <body>
+    <!-- Navbar here -->
     <div class="container-fluid p-b-3">
-        <!-- Navbar here -->
         <nav class="navbar navbar-full  navbar-fixed-top navbar-dark bg-inverse">
             <a class="navbar-brand" href="#">Sedefi</a>
             <div class="nav navbar-nav">
                 <a class="nav-item nav-link pull-xs-right m-l-2" href="#">Rreth nesh</a>
-                <a class="nav-item nav-link pull-xs-right m-l-2" href="#">Produktet</a>
                 <a class="nav-item nav-link pull-xs-right m-l-2" href="#">Kontakti</a>
+                <a class="nav-item nav-link pull-xs-right m-l-2" href="#">Produktet</a>
             </div>
 
 
         </nav>
 
-        <!-- Navbar here -->
+        <!-- /Navbar here -->
     </div>
 
 
 
-
+    <!-- Carousel  here -->
     <div class="container-fluid m-t-3 p-x-0 ">
         <div class="col-xs-12 p-x-0">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -59,7 +64,7 @@
                             <p>webpage 1</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item img-rounded">
                         <img src="img/carousel-1.png" alt="Second slide">
                         <div class="carousel-caption hidden-md-down">
                             <h3>Sedefi</h3>
@@ -87,20 +92,92 @@
 
         </div>
     </div>
+    <!-- Carousel  here -->
+
+
+    <!-- Produktet/cards here -->
+    <div class="content">
+
+        <div class="row-xs-12">
+            <h1 class="display-1 text-xs-center text-danger alert alert-danger">Produktet</h1>
+            <div class="col-sm-4">
+                <div class="card card-danger text-xs-center">
+                    <img class="card-img-top" src="img/produkt-1.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Keks i bluar</h4>
+                        <p class="card-text">Permban spermban ani</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card card-danger text-xs-center">
+                    <img class="card-img-top" src="img/produkt-1.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Keks i bluar</h4>
+                        <p class="card-text">Permban spermban ani</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card card-danger text-xs-center">
+                    <img class="card-img-top" src="img/produkt-1.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Keks i bluar</h4>
+                        <p class="card-text">Permban spermban ani</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row-xs-12">
+            <div class="col-sm-4">
+                <div class="card card-danger text-xs-center text-xs-center">
+                    <img class="card-img-top" src="img/produkt-1.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Keks i bluar</h4>
+                        <p class="card-text">Permban spermban ani</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card card-danger text-xs-center">
+                    <img class="card-img-top" src="img/produkt-1.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Keks i bluar</h4>
+                        <p class="card-text">Permban spermban ani</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card card-danger text-xs-center">
+                    <img class="card-img-top" src="img/produkt-1.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Keks i bluar</h4>
+                        <p class="card-text">Permban spermban ani</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- /Produktet/cards here -->
+
+        <!-- Kontakti -->
+        <div class="content">
+
+            <div class="row-xs-12">
+                <h1 class="display-1 text-xs-center">Kontakti</h1></div>
+        </div>
+        <!-- Kontakti -->
 
 
 
 
 
-
-
-
-
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
 </body>
 
 </html>
