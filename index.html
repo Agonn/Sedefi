@@ -11,6 +11,7 @@
         
         body {
             /*overflow: hidden !important; */
+            position: relative;
         }
         
         .card-img-top {
@@ -25,6 +26,14 @@
         .bg-colors-1 {
             background-color: #F0AD4E !important;
         }
+        
+        .navbar-fixed-top {
+            box-shadow: 0 4px 5px -5px black; !important;
+        }
+        
+        .shadows {
+            box-shadow: 8px 8px 8px -10px black !important;
+        }
     </style>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
@@ -35,11 +44,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
     <!-- Navbar here -->
     <div class="container-fluid p-b-3">
-        <nav class="navbar navbar-full  navbar-fixed-top navbar-light bg-faded">
-            
+        <nav class="navbar navbar-full  navbar-fixed-top navbar-light bg-faded w-100">
+
             <div class="nav navbar-nav">
                 <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" href="#rrethnesh">Rreth nesh</a>
                 <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" href="#kontakti">Kontakti</a>
@@ -106,7 +115,7 @@
     <!-- Produktet/cards here -->
     <div class="container-fuid">
 
-        <div class="row-xs-12">
+        <div class="row-xs-12 ">
             <h1 class="display-3 text-xs-center" id="produktet">Produktet</h1>
             <div class="col-sm-4 bg-colors ">
                 <div class="card card-danger text-xs-center ">
@@ -199,16 +208,11 @@
 
 
     <!-- Rreth Nesh -->
-    <button class="btn btn-danger btn-block dropdown-toggle w-100" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="part">
+    <button class="btn btn-danger btn-block dropdown-toggle w-100" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="rrethnesh">
         Rreth nesh
     </button>
     <div class="container-fluid alert-danger">
-        <div class="">
-            <p>
 
-
-
-            </p>
             <div class="collapse" id="collapseExample">
                 <div class="card card-block">
                     <h1 class="text-xs-center">“Sedefi Commerce”</h1>
@@ -250,7 +254,7 @@
 
 
 
-    </script>
+  
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
@@ -258,15 +262,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
 
     <script>
-       
-        
         var targetOffset = $("#produktet").offset().top;
         $(window).scroll(function() {
             if ($(".navbar").offset().top > targetOffset) {
-                $(".navbar-full").css('background-color', '#D9534F');}
-                else $(".navbar-fixed-top").css('background-color', 'white');
-            });
-        
+                $(".navbar-full").css('background-color', '#D9534F');
+            } else $(".navbar-fixed-top").css('background-color', 'white');
+        });
     </script>
 </body>
 
