@@ -39,7 +39,7 @@
     <!-- Navbar here -->
     <div class="container-fluid p-b-3">
         <nav class="navbar navbar-full  navbar-fixed-top navbar-light bg-faded">
-            <a class="navbar-brand" href="#">Sedefi</a>
+            
             <div class="nav navbar-nav">
                 <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" href="#rrethnesh">Rreth nesh</a>
                 <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" href="#kontakti">Kontakti</a>
@@ -107,7 +107,7 @@
     <div class="container-fuid">
 
         <div class="row-xs-12">
-            <h1 class="display-3 text-xs-center" id="part1">Produktet</h1>
+            <h1 class="display-3 text-xs-center" id="produktet">Produktet</h1>
             <div class="col-sm-4 bg-colors ">
                 <div class="card card-danger text-xs-center ">
                     <img class="card-img-top" src="img/produkt-1.png" alt="Card image cap">
@@ -174,7 +174,7 @@
     <div class="container-fluid text-xs-center bg-colors-1 ">
 
         <div class="row-xs-12 m-x-auto">
-            <h1 id="#kontakti" class="display-1 text-xs-center text-danger" id="part2">Kontakti</h1>
+            <h1 class="display-1 text-xs-center text-danger" id="kontakti">Kontakti</h1>
         </div>
         <hr>
         <div class="jumbotron bg-colors-1">
@@ -199,7 +199,7 @@
 
 
     <!-- Rreth Nesh -->
-    <button class="btn btn-danger btn-block dropdown-toggle w-100" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    <button class="btn btn-danger btn-block dropdown-toggle w-100" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="part">
         Rreth nesh
     </button>
     <div class="container-fluid alert-danger">
@@ -258,16 +258,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
 
     <script>
+       
         
-        var targetOffset = $("#part1").offset().top;
+        var targetOffset = $("#produktet").offset().top;
         $(window).scroll(function() {
             if ($(".navbar").offset().top > targetOffset) {
                 $(".navbar-full").css('background-color', '#D9534F');}
                 else $(".navbar-fixed-top").css('background-color', 'white');
-            
-            
-            
-        });
+            });
         
     </script>
 </body>
