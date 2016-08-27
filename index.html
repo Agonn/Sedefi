@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
 
 <head>
     <style>
@@ -17,6 +17,14 @@
             width: 100%;
             height: auto;
         }
+        
+        .bg-colors {
+            background-color: #D9534F !important;
+        }
+        
+        .bg-colors-1 {
+            background-color: #F0AD4E !important;
+        }
     </style>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
@@ -30,12 +38,12 @@
 <body>
     <!-- Navbar here -->
     <div class="container-fluid p-b-3">
-        <nav class="navbar navbar-full  navbar-fixed-top navbar-dark bg-inverse">
+        <nav class="navbar navbar-full  navbar-fixed-top navbar-light bg-faded">
             <a class="navbar-brand" href="#">Sedefi</a>
             <div class="nav navbar-nav">
-                <a class="nav-item nav-link pull-xs-right m-l-2" href="#">Rreth nesh</a>
-                <a class="nav-item nav-link pull-xs-right m-l-2" href="#">Kontakti</a>
-                <a class="nav-item nav-link pull-xs-right m-l-2" href="#">Produktet</a>
+                <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" href="#rrethnesh">Rreth nesh</a>
+                <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" href="#kontakti">Kontakti</a>
+                <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" href="#produktet">Produktet</a>
             </div>
 
 
@@ -96,11 +104,20 @@
 
 
     <!-- Produktet/cards here -->
-    <div class="content">
+    <div class="container-fuid">
 
         <div class="row-xs-12">
-            <h1 class="display-1 text-xs-center text-danger alert alert-danger">Produktet</h1>
-            <div class="col-sm-4">
+            <h1 class="display-3 text-xs-center" id="part1">Produktet</h1>
+            <div class="col-sm-4 bg-colors ">
+                <div class="card card-danger text-xs-center ">
+                    <img class="card-img-top" src="img/produkt-1.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Keks i bluar</h4>
+                        <p class="card-text">Permban spermban ani</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 bg-colors">
                 <div class="card card-danger text-xs-center">
                     <img class="card-img-top" src="img/produkt-1.png" alt="Card image cap">
                     <div class="card-block">
@@ -109,16 +126,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card card-danger text-xs-center">
-                    <img class="card-img-top" src="img/produkt-1.png" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Keks i bluar</h4>
-                        <p class="card-text">Permban spermban ani</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 bg-colors">
                 <div class="card card-danger text-xs-center">
                     <img class="card-img-top" src="img/produkt-1.png" alt="Card image cap">
                     <div class="card-block">
@@ -128,8 +136,9 @@
                 </div>
             </div>
         </div>
-        <div class="row-xs-12">
-            <div class="col-sm-4">
+
+        <div class="row-xs-12 ">
+            <div class="col-sm-4 bg-colors">
                 <div class="card card-danger text-xs-center text-xs-center">
                     <img class="card-img-top" src="img/produkt-1.png" alt="Card image cap">
                     <div class="card-block">
@@ -138,7 +147,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 bg-colors">
                 <div class="card card-danger text-xs-center">
                     <img class="card-img-top" src="img/produkt-1.png" alt="Card image cap">
                     <div class="card-block">
@@ -147,7 +156,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 bg-colors">
                 <div class="card card-danger text-xs-center">
                     <img class="card-img-top" src="img/produkt-1.png" alt="Card image cap">
                     <div class="card-block">
@@ -157,27 +166,110 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+
+
+    <!-- Kontakti -->
+    <div class="container-fluid text-xs-center bg-colors-1 ">
+
+        <div class="row-xs-12 m-x-auto">
+            <h1 id="#kontakti" class="display-1 text-xs-center text-danger" id="part2">Kontakti</h1>
+        </div>
+        <hr>
+        <div class="jumbotron bg-colors-1">
+            <h1 class="display-6 text-danger">Numrat:</h1>
+            <p class="lead font-weight-bold"> Tel: +381 39 421 444 </p>
+            <p class="lead font-weight-bold">Fax: +381 39 421 444 </p>
+            <p class="lead font-weight-bold">Mob: +377 44 180 070 </p>
+            <p class="lead font-weight-bold">Mob: +377 45 505 030 </p>
+            <hr class="">
+            <h1 class="display-6 text-danger">Email:</h1>
+            <a class="lead text-muted font-weight-bold" href="mailto::lukisedefi@sedefi.com">lukisedefi@sedefi.com</a>
+            <hr class="">
+            <h1 class="display-6 text-danger">Adresa</h1>
+            <p class="lead font-weight-bold">Qarshija e gjatë 198 Pejë,30000 Kosovë.</p>
+
 
         </div>
 
-        <!-- /Produktet/cards here -->
+    </div>
+    <!-- Kontakti -->
 
-        <!-- Kontakti -->
-        <div class="content">
 
-            <div class="row-xs-12">
-                <h1 class="display-1 text-xs-center">Kontakti</h1></div>
+
+    <!-- Rreth Nesh -->
+    <button class="btn btn-danger btn-block dropdown-toggle w-100" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Rreth nesh
+    </button>
+    <div class="container-fluid alert-danger">
+        <div class="">
+            <p>
+
+
+
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-block">
+                    <h1 class="text-xs-center">“Sedefi Commerce”</h1>
+                    <p class="lead">është themeluar në vitin 1990. Në fillim ka startuar si një firmë e vogël tregtare e cila veprimtarin e vet e ka shtrirë kryesisht me tregtimin e artikujve ushqimor si dhe me tregtimin e pemëve dhe perimeve nga Maqedonia e Turqia. Në vitin 1992 është hapur marketi dhe veprimtaria e firmës vetëm sa kishte filluar të zgjerohet. Në vitin 1994 ka startuar linja e parë e prodhimit privat në Kosovë, linja e prodhimit të sheqerit kokërr dhe më pas edhe sheqerit kristal 1/1 si dhe paketimi i tyre.Duke parë suksesin e arritur kjo firmë ka vazhduar të zgjeroj veprimtarin e tyre dhe kështu në vitin 2000 startojnë me prodhimin e llokumit. Pasi që kërkesat në treg po rriteshin kjo firmë në vitin 2004 ka startuar me linjën e re te prodhimit llojeve të ndryshme të biskotave me një teknologji moderne me standard evropian. Suksesi në treg me biskota ishte i padiskutueshem me këtë arritëm që të mbulojm 90% të tregut kosovar. Në vitin 2009 Sedefi starton me linje te re at të prodhimit dhe riciklimin të nailonit dhe në 2013 me prodhimin e disa llojeve të shkopinjëve. Sot, Sedefi Commerce ka 40 punëtorë se bashku me pronarin Ahmet Sedefi dhe ne operojm ne tërë tregun kosovar me artikujt tonë dhe këtë e kemi aritur falë cilësis dhe korektësis që kemi ndaj blerësve tanë. Projektet tona janë ne zhvillim e siper dhe së shpejti do të startojm edhe me një linjë të re të prodhimit që i përket branzhit tonë aktual.</p>
+                </div>
+            </div>
         </div>
-        <!-- Kontakti -->
 
 
 
 
 
-        <!-- jQuery first, then Tether, then Bootstrap JS. -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+    </div>
+
+
+
+
+    <!-- /Rreth Nesh -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">Place sticky footer content here.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </footer>
+
+
+
+
+
+
+    </script>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+
+    <script>
+        
+        var targetOffset = $("#part1").offset().top;
+        $(window).scroll(function() {
+            if ($(".navbar").offset().top > targetOffset) {
+                $(".navbar-full").css('background-color', '#D9534F');}
+                else $(".navbar-fixed-top").css('background-color', 'white');
+            
+            
+            
+        });
+        
+    </script>
 </body>
 
 </html>
