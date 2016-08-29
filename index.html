@@ -42,6 +42,20 @@
             height: auto;
         }
         
+        .card {
+            transition: all 0.7s;
+        }
+        
+        .card:hover {
+            -webkit-box-shadow: -1px 11px 45px -13px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 11px 45px -13px rgba(0, 0, 0, 0.75);
+            box-shadow: -1px 11px 45px -13px rgba(0, 0, 0, 0.75);
+            -webkit-transition: -webkit-transform 0.5s;
+            /* transforms for cards */
+            transition: all 1s;
+            -webkit-transform: translate(0px, -7px);
+        }
+        
         .bg-colors {
             background-color: #CC181E !important;
         }
@@ -83,6 +97,7 @@
             transform: rotate(90deg);
         }
         /* Navigation links animations */
+        
         .navbar-light .navbar-nav .active>.nav-link,
         .navbar-light .navbar-nav .active>.nav-link:focus,
         .navbar-light .navbar-nav .active>.nav-link:hover,
@@ -95,7 +110,7 @@
         .navbar-light .navbar-nav .open>.nav-link,
         .navbar-light .navbar-nav .open>.nav-link:focus,
         .navbar-light .navbar-nav .open>.nav-link:hover {
-            color:black ;
+            color: black;
             -webkit-transform: scale(1.2);
             -webkit-transition: all 1s;
         }
