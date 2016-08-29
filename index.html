@@ -35,7 +35,6 @@
             position: relative;
             background-color: #CC181E !important;
             overflow-x: hidden;
-            
         }
         
         .card-img-top {
@@ -46,7 +45,6 @@
         .bg-colors {
             background-color: #CC181E !important;
         }
-        
         
         .navbar-fixed-top {
             box-shadow: 0 4px 5px -5px black;
@@ -77,10 +75,29 @@
         }
         
         .transform {
-            -webkit-transition: -webkit-transform 1s; /* Safari */
-    transition:  transform 1s;
-              -webkit-transform: rotate(90deg); /* Safari */
-    transform: rotate(90deg);
+            -webkit-transition: -webkit-transform 1s;
+            /* Safari */
+            transition: transform 1s;
+            -webkit-transform: rotate(90deg);
+            /* Safari */
+            transform: rotate(90deg);
+        }
+        /* Navigation links animations */
+        .navbar-light .navbar-nav .active>.nav-link,
+        .navbar-light .navbar-nav .active>.nav-link:focus,
+        .navbar-light .navbar-nav .active>.nav-link:hover,
+        .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .nav-link.active:focus,
+        .navbar-light .navbar-nav .nav-link.active:hover,
+        .navbar-light .navbar-nav .nav-link.open,
+        .navbar-light .navbar-nav .nav-link.open:focus,
+        .navbar-light .navbar-nav .nav-link.open:hover,
+        .navbar-light .navbar-nav .open>.nav-link,
+        .navbar-light .navbar-nav .open>.nav-link:focus,
+        .navbar-light .navbar-nav .open>.nav-link:hover {
+            color:black ;
+            -webkit-transform: scale(1.2);
+            -webkit-transition: all 1s;
         }
     </style>
 
@@ -88,7 +105,7 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="150">
 
-    <a href="#"><img src="img/logo-small.png" class="logo p-y-1 m-t-1 hidden-sm-down" ></a>
+    <a href="#"><img src="img/logo-small.png" class="logo p-y-1 m-t-1 hidden-sm-down"></a>
 
     <!-- Navbar here -->
     <div class="container-fluid p-b-3">
@@ -312,7 +329,7 @@
             });
         });
 
-    
+
         /* var targetOffset = $(".changenavbarcolor").offset().top;
                 $(window).scroll(function() {
                     if ($(".navbar").offset().top > targetOffset) {
