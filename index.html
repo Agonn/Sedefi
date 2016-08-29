@@ -63,24 +63,45 @@
         body::-webkit-scrollbar {
             width: 0;
         }
+        
+        .logo {
+            position: fixed;
+            z-index: 9999;
+            -webkit-transition: -webkit-scale 1s;
+            /* Safari */
+            transition: transform 1s;
+        }
+        
+        .logo:hover {
+            -webkit-transform: scale(1.1);
+            /* Safari */
+            transform: scale(1.1);
+        }
+        
+        .transform {
+            -webkit-transition: -webkit-transform 1s; /* Safari */
+    transition:  transform 1s;
+              -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);
+        }
     </style>
 
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="150">
 
-<a href="#"><img src="img/logo-small.png" class="img-fluid p-y-1 m-t-1 hidden-sm-down" style="position:fixed;z-index:9999;"></a>
+    <a href="#"><img src="img/logo-small.png" class="logo p-y-1 m-t-1 hidden-sm-down"></a>
 
     <!-- Navbar here -->
     <div class="container-fluid p-b-3">
 
         <nav class="navbar navbar-full  navbar-fixed-top navbar-light bg-faded">
-        <!-- Brand name here <a class="navbar-brand text-danger" href="#">Sedefi</a> !-->
-            
+            <!-- Brand name here <a class="navbar-brand text-danger" href="#">Sedefi</a> !-->
+
             <ul class="nav navbar-nav">
 
                 <li>
-                    <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" data-toggle="modal"  data-target="#myModal" style="cursor:pointer;">Rreth nesh</a>
+                    <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" data-toggle="modal" data-target="#myModal" style="cursor:pointer;">Rreth nesh</a>
                 </li>
                 <li>
                     <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" href="#kontakti">Kontakti</a>
@@ -226,7 +247,7 @@
         <hr>
         <div class="jumbotron bg-colors-1">
             <h1 class="display-6 text-warning">Numrat<i class="fa fa-phone" aria-hidden="true"></i></h1>
-            <p class="lead font-weight-bold"> Tel: +381 39 421 444  </p>
+            <p class="lead font-weight-bold"> Tel: +381 39 421 444 </p>
             <p class="lead font-weight-bold">Fax: +381 39 421 444 </p>
             <p class="lead font-weight-bold">Mob: +377 44 180 070 </p>
             <p class="lead font-weight-bold">Mob: +377 45 505 030 </p>
@@ -293,6 +314,7 @@
             });
         });
 
+    
         /* var targetOffset = $(".changenavbarcolor").offset().top;
                 $(window).scroll(function() {
                     if ($(".navbar").offset().top > targetOffset) {
