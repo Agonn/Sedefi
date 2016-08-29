@@ -17,14 +17,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
     <!-- Font-awesome for icons here ,uncomment to get them
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"> !-->
+
+
     <style>
         .carousel-control.left,
+        /* Remove background fade for controllers */
+        
         .carousel-control.right {
             background: none !important;
             filter: progid: none !important;
         }
         
         .modal-header {
+            /* Header color in modal,currently affects all modal but since I'm using only one modal it's fine */
             padding: 9px 15px;
             border-bottom: 1px solid #eee;
             background-color: #F0AD4E;
@@ -40,6 +45,7 @@
             position: relative;
             background-color: #CC181E !important;
             overflow-x: hidden;
+            /* Remove horizontal scroller if any */
         }
         
         .card-img-top {
@@ -49,9 +55,11 @@
         
         .card {
             transition: all 0.7s;
+            /*Transition on mouse-out for cards */
         }
         
         .card:hover {
+            /* Card effects and shadows */
             -webkit-box-shadow: -1px 11px 45px -13px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: -1px 11px 45px -13px rgba(0, 0, 0, 0.75);
             box-shadow: -1px 11px 45px -13px rgba(0, 0, 0, 0.75);
@@ -71,6 +79,7 @@
         
         .navbar-fixed-top {
             box-shadow: 0 4px 5px -5px black;
+            /* Add shadow to navbar */
             !important;
             background-color: #F0AD4E !important;
         }
@@ -81,18 +90,21 @@
         
         body::-webkit-scrollbar {
             width: 0;
+            /*Remove scrollbar on chrome for better view */
         }
         
         .logo {
             position: fixed;
             z-index: 9999;
             -webkit-transition: -webkit-scale 1s;
+            /* Animation for logo */
             /* Safari */
             transition: transform 1s;
         }
         
         .logo:hover {
             -webkit-transform: scale(1.1);
+            /* Animation for logo on mouse hover */
             /* Safari */
             transform: scale(1.1);
         }
@@ -146,6 +158,7 @@
             transform: translate3d(0, -300px, 0);
             opacity: 1;
         }
+        /* Custom modal animation here */
     </style>
 
 </head>
@@ -158,7 +171,7 @@
     <div class="container-fluid p-b-3">
 
         <nav class="navbar navbar-full  navbar-fixed-top navbar-light bg-faded">
-            <!-- Brand name here <a class="navbar-brand text-danger" href="#">Sedefi</a> !-->
+
 
             <ul class="nav navbar-nav">
 
@@ -175,9 +188,9 @@
 
         </nav>
 
-        <!-- /Navbar here -->
-    </div>
 
+    </div>
+    <!-- /Navbar here -->
 
 
     <!-- Carousel  here -->
@@ -226,7 +239,7 @@
 
         </div>
     </div>
-    <!-- Carousel  here -->
+    <!-- /Carousel  here -->
 
 
     <!-- Produktet/cards here -->
@@ -294,7 +307,7 @@
 
         </div>
     </div>
-
+    <!-- /Produktet/cards here -->
 
 
 
@@ -372,15 +385,17 @@
             </div>
         </div>
     </footer>
-
+    <!-- Footer here -->
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+    <!-- Can add future Javascripts here !-->
+    
     <script>
-        $(function() {
+        $(function() { // Jquery smooth scroll on # links.
             $('a[href*="#"]:not([href="#carousel-example-generic"])').click(function() {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                     var target = $(this.hash);
@@ -394,7 +409,7 @@
                 }
             });
         });
-        console.log("Made by Agon Ramizi");
+        console.log("Made by Agon Ramizi"); //Developer communication
         /* Toggle tooltips if you want  
         $(function() {
             $('[data-toggle="tooltip"]').tooltip()
