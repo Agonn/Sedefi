@@ -20,6 +20,49 @@
 
 
     <style>
+        .navbar-nav {
+            /* Center navbar links */
+            display: -webkit-box;
+            display: -moz-box;
+            display: box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            box-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            -o-align-items: center;
+            align-items: center;
+            -ms-flex-align: center;
+            -webkit-box-pack: center;
+            -moz-box-pack: center;
+            box-pack: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
+            -o-justify-content: center;
+            justify-content: center;
+            -ms-flex-pack: center;
+        }
+        
+        @media (max-width: 767px) { /* Right on bigger screens,center in small screens */
+            .navbar ul {
+                text-align: center;
+            }
+            .navbar ul li {
+                display: inline-block;
+                vertical-align: top;
+                padding: 0 10px;
+            }
+            .navbar ul li a {
+                margin-left: 0 !important;
+            }
+        }
+        
         .carousel-control.left,
         /* Remove background fade for controllers */
         
@@ -176,13 +219,13 @@
             <ul class="nav navbar-nav">
 
                 <li>
-                    <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" data-toggle="modal" data-target="#myModal" style="cursor:pointer;">Rreth nesh</a>
+                    <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" href="#produktet">Produktet</a>
                 </li>
                 <li>
                     <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" href="#kontakti">Kontakti</a>
                 </li>
                 <li>
-                    <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" href="#produktet">Produktet</a>
+                    <a class="nav-item nav-link pull-xs-right m-l-2 font-weight-bold" data-toggle="modal" data-target="#myModal" style="cursor:pointer;">Rreth nesh</a>
                 </li>
             </ul>
 
@@ -378,7 +421,7 @@
                 </div>
                 <div class="col-xs-6">
                     <a href="https://www.facebook.com/sedeficommerce.peje" target="_blank" style="float:right;" class="push-xl-right">
-                        <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-128.png" alt="Sedefi facebook link icon" class="text-xs-right img-fluid " width="25" data-toggle="tooltip" data-placement="top" title="Na ndiqni ne Facebook" />
+                        <img src="img/fb-ico.png" alt="Sedefi facebook link icon" class="text-xs-right img-fluid " width="25" data-toggle="tooltip" data-placement="top" title="Na ndiqni ne Facebook" />
 
                     </a>
                 </div>
