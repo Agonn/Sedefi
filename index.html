@@ -23,6 +23,11 @@
             align-items: center;
             justify-content: center;
         }
+        .carousel-caption > h3 {
+            
+          
+           
+        }
         
         .carousel-control.left,
         /* Remove background fade for controllers */
@@ -211,22 +216,22 @@
 
                         <img src="img/carousel-1.png" alt="First slide">
                         <div class="carousel-caption hidden-md-down">
-                            <h3>Sedefi</h3>
-                            <p>Produktet e reja se shpejti</p>
+                            <h3>Produktet më të reja</h3>
+                            <p>Biscotti</p>
                         </div>
                     </div>
                     <div class="carousel-item  img-responsive">
                         <img src="img/carousel-2.png" alt="Second slide">
                         <div class="carousel-caption hidden-md-down">
                             <h3>Sedefi</h3>
-                            <p>Se shpejti</p>
+                            <p>me produkte të reja</p>
                         </div>
                     </div>
                     <div class="carousel-item img-responsive">
                         <img src="img/carousel-3.png" alt="Third slide">
                         <div class="carousel-caption hidden-md-down">
-                            <h3>Sedefi</h3>
-                            <p>Se shpejti</p>
+                            <h3>Kualitet i lart </h3>
+                            <p>Top quality medal</p>
                         </div>
                     </div>
 
@@ -492,6 +497,14 @@
         $(function() {
             $('[data-toggle="tooltip"]').tooltip()
         })*/
+
+
+
+        $(function() {
+            $('.carousel').carousel({
+                interval: 2000
+            });
+        });
     </script>
 
 </body>
